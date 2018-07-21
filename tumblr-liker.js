@@ -28,7 +28,8 @@ function curtir_tumblr() {
         return controle.matches('.like');
     });
     like_btn[0].click();
-    like_btn[0].parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.scrollIntoView(true);
+    like_btn[0].parentElement.parentElement.parentElement.parentElement.scrollIntoView(true);
+    window.scrollTo(0, window.pageYOffset - 150);
     curtidas_tumblr_total++;
     console.log("Curtidas: " + curtidas_tumblr_total);
 }
